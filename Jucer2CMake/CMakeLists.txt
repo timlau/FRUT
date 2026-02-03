@@ -138,4 +138,5 @@ elseif(CMAKE_CXX_COMPILER_ID MATCHES "MSVC")
   target_compile_options(Jucer2CMake PRIVATE /WX /W4 /wd4512)
 endif()
 
-install(TARGETS Jucer2CMake DESTINATION "FRUT/bin")
+
+install(TARGETS Jucer2CMake DESTINATION "${CMAKE_INSTALL_BINDIR}")

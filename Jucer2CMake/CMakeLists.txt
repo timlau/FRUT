@@ -125,7 +125,7 @@ target_link_libraries(Jucer2CMake PRIVATE Jucer2CMake_JUCE)
 
 if(CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   target_compile_options(Jucer2CMake PRIVATE
-    -Werror
+    -Werro/home/tim/udv/cache/CPM/juce/90bcr
     -Weverything
     -Wno-c++98-compat
     -Wno-c++98-compat-pedantic

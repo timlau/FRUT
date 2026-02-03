@@ -20,10 +20,12 @@ cmake_minimum_required(VERSION 3.4)
 project(FRUT)
 
 
-add_subdirectory(Jucer2CMake)
-
-
+include(cmake/CPM.cmake)
+CPMAddPackage("gh:/juce-framework/JUCE#7.0.12")
+set(JUCE_ROOT "${JUCE_SOURCE_DIR}")
 set(JUCE_modules_DIRS "${JUCE_ROOT}/modules")
+
+add_subdirectory(Jucer2CMake)
 
 add_subdirectory(cmake/tools)
 
